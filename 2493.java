@@ -37,36 +37,37 @@
 //   }
 // }
 
+//메모리 초과 뜸
+// import java.util.*;
+// import java.io.*;
+// import java.util.Stack;
 
-import java.util.*;
-import java.io.*;
-import java.util.Stack;
-
-public class Main{
-  public static void main(String[] args){
-    Scanner scanner = new Scanner(System.in);
-    Stack<Int[]> stack = new Stack<>();
-    int n = scanner.nextInt();
-    int[] heights = new int[n];
-    int[] result = new int[n];
+// public class Main{
+//   public static void main(String[] args){
+//     Scanner scanner = new Scanner(System.in);
+//     Stack<Int[]> stack = new Stack<>();
+//     int n = scanner.nextInt();
+//     int[] heights = new int[n];
+//     int[] result = new int[n];
 
 
-    for(int i = 0 ; i < n; i++){
-      height[i] = scanner.nextInt();
-      while (!stack.isEmpty() && stack.peek()[0] < height[i]) {
-        stack.pop();
-      }
+//     for(int i = 0 ; i < n; i++){
+//       height[i] = scanner.nextInt();
+//       while (!stack.isEmpty() && stack.peek()[0] < height[i]) {
+//         stack.pop();
+//       }
 
-      if (!stack.isEmpty()) {
-          result[i] = stack.peek()[1] + 1;
-      } else {
-          result[i] = 0;
-      }
+//       if (!stack.isEmpty()) {
+//           result[i] = stack.peek()[1] + 1;
+//       } else {
+//           result[i] = 0;
+//       }
 
-      stack.push(new int[] { height[i], i });
-    }
-    for (int r : result) {
-      System.out.print(r + " ");
-    }
-  }
-}
+//       stack.push(new int[] { height[i], i });
+//     }
+//     for (int r : result) {
+//       System.out.print(r + " ");
+//     }
+//   }
+// }
+
